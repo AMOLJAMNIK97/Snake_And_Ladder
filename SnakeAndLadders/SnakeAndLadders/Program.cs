@@ -10,13 +10,16 @@ namespace SnakeAndLadders
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to SNAKE & LADDER!");
-            Console.WriteLine("Choose option\n 1. Single player position");
+            Console.WriteLine("Welcome to Snak And Ladder Game ");
+            Console.WriteLine("Choose option\n 1. Single player position\n2.Roll The Dice");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
                     Player.Position();
+                    break;
+                case 2:
+                    Player.RollDice();
                     break;
                 default:
                     Console.WriteLine("Wrong choice");
