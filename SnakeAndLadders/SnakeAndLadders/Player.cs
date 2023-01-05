@@ -25,7 +25,7 @@ namespace SnakeAndLadders
         {
             const int No_Play = 1;
             const int Ladder = 2;
-            const int Snake_Bite = 3;
+            const int Snake = 3;
             int position = 0;
             Random random = new Random();
             int dice = random.Next(1, 7);
@@ -38,7 +38,7 @@ namespace SnakeAndLadders
                 case Ladder:
                     position = position + dice;
                     break;
-                case Snake_Bite:
+                case Snake:
                     position = position - dice;
                     break;
                 default:
