@@ -10,8 +10,18 @@ namespace SnakeAndLadders
     {
         static void Main(string[] args)
         {
-            Player player1=new Player();
-            player1.RolleDice(0, 7);
+            Console.WriteLine("Welcome to SNAKE & LADDER!");
+            Console.WriteLine("Choose option\n 1. Single player position");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    Player.Position();
+                    break;
+                default:
+                    Console.WriteLine("Wrong choice");
+                    break;
+            }
         }
     }
 }

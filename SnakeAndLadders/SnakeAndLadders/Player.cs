@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace SnakeAndLadders
 {
-    internal class Player
+    public class Player
     {
+        public static void Position()
+        { 
+
+             int Position = 0;
+             Console.WriteLine("Player is at starting  Position: " + Position);
+        }
     }
 }
