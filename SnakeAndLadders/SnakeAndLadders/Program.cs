@@ -24,6 +24,7 @@ namespace SnakeAndLadders
                 case 3:
                     Player.CheckOption();
                     break;
+                 
                 default:
                     Console.WriteLine("Wrong choice");
                     break;
